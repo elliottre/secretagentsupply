@@ -85,6 +85,9 @@ body {
   background-color: firebrick;
   color: white;
 }
+.menu {
+  display: none;
+}
 /* items */
 .items {
   display: flex;
@@ -166,4 +169,52 @@ span {
   height: 5rem;
   margin-top: 4rem;
   color: white;
+}
+/* Tablet formatting */
+@media only screen and (max-width: 1024px) {
+
+  .frame-glasses, .image-glasses, .info-glasses {
+    display: none;
+  }
+  .frame {
+    width: 47%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .about .container div {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .navigation .container div {
+    display: none;
+  }
+  .menu {
+    display: inline;
+  }
+  .navigation .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* Phone formatting */
+@media only screen and (max-width: 470px){
+  .frame-watch, .image-watch, .info-watch {
+    display: none;
+  }
+  .frame {
+    width: 100%;
+    margin: 2rem;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: center;
+
+
 }
